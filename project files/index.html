@@ -1,0 +1,311 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmetic Insights Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #001f3f;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .dashboard {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 30px;
+            text-align: left;
+        }
+
+        .dashboard h2 {
+            color: #001f3f;
+        }
+
+        .dashboard p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .dashboard a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #001f3f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dashboard a:hover {
+            background-color: #003366;
+        }
+
+        footer {
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cosmetic Insights Dashboard</h1>
+        <p>Visualizing Trends and Product Suitability in the Cosmetics Market</p>
+    </header>
+
+    <div class="content">
+
+        <div class="dashboard">
+            <h2>Dashboard 1: Product Rankings and Brand Analysis</h2>
+            <p>
+                This dashboard provides detailed insights into the product distribution and brand performance across the cosmetics market. It includes:
+            </p>
+            <ul>
+                <li>Bar Chart showing Label Count distribution</li>
+                <li>Pie Chart highlighting Top Performing Brands</li>
+                <li>Box Plot comparing Brand vs. Price</li>
+                <li>Line Chart illustrating Label vs. Brand Trends</li>
+                <li>Box Plot showing Brand vs. Product Rank</li>
+            </ul>
+            <a href="https://public.tableau.com/views/storyofcosmetics/PrdoctRankingDetailedAnalysis?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Dashboard 1</a>
+        </div>
+
+        <div class="dashboard">
+            <h2>Dashboard 2: Skin Type Suitability Overview</h2>
+            <p>
+                This dashboard analyzes how different products are suited for various skin types. It offers insights through:
+            </p>
+            <ul>
+                <li>Heat Map showing Suitability across all Skin Types</li>
+                <li>Bubble Plot for Dry Skin Product Suitability</li>
+                <li>Box Plot for Normal Skin Product Suitability</li>
+                <li>Bar Chart for Sensitive Skin Suitability</li>
+                <li>Bar Chart for Oily Skin Suitability</li>
+            </ul>
+            <a href="https://public.tableau.com/views/storyofcosmetics/ProductSuitabilityOverview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Dashboard 2</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Cosmetic Insights | All rights reserved
+    </footer>
+
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cosmetic Insights Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('static/beauty.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: rgba(0, 0, 51, 0.85);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .content {
+      padding: 30px 20px;
+    }
+
+    .dashboard {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+      margin: 30px auto;
+      max-width: 950px;
+      padding: 30px;
+      text-align: left;
+    }
+
+    .dashboard h2 {
+      color: #001f3f;
+      margin-top: 0;
+    }
+
+    .view-dashboard-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-dashboard-btn:hover {
+      background-color: #0066cc;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    li span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    li a {
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      background-color: #001f3f;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    li a:hover {
+      background-color: #003366;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cosmetic Insights Dashboard</h1>
+    <p>Explore Product Trends, Brand Rankings, and Skin Type Suitability</p>
+  </header>
+
+  <div class="content">
+
+    <!-- Dashboard 1 -->
+    <div class="dashboard">
+      <h2>Dashboard 1: Product Rankings and Brand Analysis</h2>
+      <a class="view-dashboard-btn" href="https://public.tableau.com/views/storyofcosmetics/PrdoctRankingDetailedAnalysis?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" target="_blank">
+        View Full Dashboard 1
+      </a>
+      <ul>
+        <li>
+          <span>Label Count Bar Graph</span>
+          <a href=" " target="_blank">View Visualization</a>
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        <li>
+          <span>Top Brands Pie Chart</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story11?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        <li>
+          <span>Brand vs. Price Box Plot</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story10?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        <li>
+          <span>Label vs. Rank Line Chart</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story9?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        <li>
+          <span>Brand vs. Rank Box Plot</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story8?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <!-- Dashboard 2 -->
+    <div class="dashboard">
+      <h2>Dashboard 2: Skin Type Suitability Overview</h2>
+      <a class="view-dashboard-btn" href="https://public.tableau.com/views/storyofcosmetics/ProductSuitabilityOverview?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" target="_blank">
+        View Full Dashboard 2
+      </a>
+      <ul>
+        <li>
+          <span>Skin Type Heat Map</span>
+          <a href="https://public.tableau.com/views/storyofcosmetics/Story2?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+         
+        </li>
+        <li>
+          <span>Dry Skin Suitability (Box Plot)</span>
+          <a href="https://public.tableau.com/views/storyofcosmetics/DrySkinSuitability?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+          
+        </li>
+        <li>
+          <span>Normal Skin Suitability (Box Plot)</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story6?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+        <li>
+          <span>Sensitive Skin Suitability (Bar Graph)</span>
+          <a href="https://public.tableau.com/views/storyofcosmetics/SensitiveSkinSuitability?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+          
+        </li>
+        <li>
+          <span>Oily Skin Suitability (Bar Graph)</span>
+          
+          <a href="https://public.tableau.com/views/dashboard1_17510055774870/Story4?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Story</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Cosmetic Insights | All rights reserved
+  </footer>
+
+</body>
+</html>
